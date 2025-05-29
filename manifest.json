@@ -1,0 +1,39 @@
+{
+  "name": "YouTube Video Funnel",
+  "description": "Funnel di visualizzazione video YouTube",
+  "components": ["chart"],
+  "style": "style.css",
+  "scripts": ["chart.js"],
+  "data": {
+    "dimensions": [],
+    "metrics": [
+      { "id": "step1", "name": "Step 1" },
+      { "id": "step2", "name": "Step 2" },
+      { "id": "step3", "name": "Step 3" },
+      { "id": "step4", "name": "Step 4" },
+      { "id": "step5", "name": "Step 5" }
+    ]
+  },
+  "options": {
+    "colorScheme": {
+      "type": "SELECT",
+      "label": "Schema Colori",
+      "options": [
+        { "label": "Unico", "value": "single" },
+        { "label": "Graduale", "value": "gradient" },
+        { "label": "Diversi", "value": "distinct" }
+      ],
+      "default": "single"
+    },
+    "showLabels": {
+      "type": "CHECKBOX",
+      "label": "Mostra Etichette",
+      "default": true
+    },
+    "barColor": {
+      "type": "COLOR",
+      "label": "Colore Barre (se unico)",
+      "default": "#4285F4"
+    }
+  }
+}
